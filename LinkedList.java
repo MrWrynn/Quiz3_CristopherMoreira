@@ -18,17 +18,17 @@ public class LinkedList {
         return this.size;
     }
 
-    public void insertNode(Object data) { /** */
+    public void insertNode(Object data) { /**Metodo para agregar elementos a la lista */
         Node newNode = new Node(data);
         if (this.cabeza == null) { //Si la cabeza está vacía:
-            this.cabeza= newNode; //La cabeza es igual al nuevo nodo
-            this.cabeza.siguiente=null; //El siguiente elemento de la cabeza está vacío
-            this.cabeza.anterior=null; //El anterior elemento de la cabeza también está vacío
+            this.cabeza= newNode; //La cabeza es igual al nuevo elemento
+            this.cabeza.siguiente=null; //El siguiente elemento de la cabeza está ahora vacío
+            this.cabeza.anterior=null; //El anterior elemento de la cabeza ahora también está vacío
             this.ultimo=this.cabeza; //El ultimo elemento de la lista es la cabeza
             this.size++; //Aumenta el tamaño de la lista
         }else { //Si la cabeza no está vacía:
-            this.ultimo.siguiente=newNode; //El siguiente elemento del ultimo es el nuevo nodo
-            newNode.anterior=this.ultimo; //El elemento anterior del nuevo nodo es el ultimo elemento
+            this.ultimo.siguiente=newNode; //El siguiente elemento del ultimo de la lista es el nuevo elemento
+            newNode.anterior=this.ultimo; //El elemento anterior al nuevo elemento es es el ultimo elemento
             newNode.siguiente=null; //El elemento siguiente al nuevo nodo está vacío
             this.ultimo=newNode; //El ultimo elemento ahora es el nuevo nodo
             this.size++; //Aumenta el tamaño de la lista
