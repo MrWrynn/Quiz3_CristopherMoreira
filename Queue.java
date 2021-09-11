@@ -12,7 +12,7 @@ public class Queue {
         return this.QueueList.deleteFirst();
     
     }
-    public Node peek() {/**Obtiene la cabeza/primer elemento*/
+    public Node peak() {/**Obtiene la cabeza/primer elemento*/
         return this.QueueList.getcabeza();
     }
     public void recorrer(){/**Recorre la lista doblemente enlazada e imprime todos sus elementos */
