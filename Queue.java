@@ -29,7 +29,7 @@ public class Queue {
             queue.enqueue(77);
             queue.dequeue();
             queue.dequeue();
-            //queue.dequeue();
+            queue.dequeue();
             queue.recorrer();
             /**
              * Los resultados son los esperados, pues despúes de encolar los números 5, 8, 3, 12, 0, 89 y 77
